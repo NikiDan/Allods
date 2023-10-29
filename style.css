@@ -53,6 +53,10 @@ header{
     position: absolute;
 }
 
+.header-images__heroes{
+    top: 8px;
+}
+
 .header-images__layer-left{
     /*position: absolute;*/
     mix-blend-mode: multiply;
@@ -67,11 +71,11 @@ header{
 }
 
 .header-images__girl, .header-images__man{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: auto;
     mix-blend-mode: normal;
-    z-index: 1;
+    /*z-index: 1;*/
 
 }
 
@@ -83,6 +87,25 @@ header{
 .header-images__man{
     max-width: 678px;
     max-height: 876px;
-    left: 1500px;
-    top: 46px;
+    position: relative;
+    right: 105px;
+    /*left: 1500px;*/
+    /*top: 46px;*/
+}
+
+.header-images__glow-center{
+    width: 100%;
+    height: auto;
+    mix-blend-mode: screen;
+    position: absolute;
+    top: -35px;
+    z-index: 0;
+}
+
+.header-images__boxes{
+    max-width: 766px;
+    max-height: 525px;
+    position: relative;
+    z-index: 2;
+    top: 215px;
 }
