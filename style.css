@@ -27,7 +27,7 @@ header{
     max-width: 376px;
     max-height: 348px;
     height: auto;
-    z-index: 1;
+    z-index: 2;
     flex-shrink: 0;
 }
 
@@ -98,14 +98,47 @@ header{
     height: auto;
     mix-blend-mode: screen;
     position: absolute;
-    top: -35px;
-    z-index: 0;
+    top: -20px;
+    z-index: 1;
 }
 
 .header-images__boxes{
-    max-width: 766px;
-    max-height: 525px;
+    max-width: max-content;
+    max-height: 500px;
     position: relative;
     z-index: 2;
-    top: 215px;
+    top: 235px;
+    right: 5px;
+}
+
+.header-images__glow-down{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 710px;
+    left: 167px;
+    mix-blend-mode: screen;
+}
+
+.header-images__layer-down{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    mix-blend-mode: multiply;
+    top: 510px;
+}
+
+.header__description {
+    color: #ffffff;
+    font-size: 41px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    position: absolute;
+    top: 687px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 2;
 }
